@@ -53,7 +53,6 @@
 ## :floppy_disk: Setup
 
 * Create MongoDB Atlas Cloud database (or local installed MongoDB database) and add user access/database credentials (USER_NAME, USER_PASSWORD, DB_CLUSTER, PORT, DB_NAME & SESSION_SECRET) to a new `.env` file. These are used in `server.js`.
-* Create github application and get access credentials (Client ID & Client Secret) to the `.env` file. These are used in `auth.js`.
 * Add your IP address to MongoDB Atlas Network Access whitelist. Or simply whitelist all (IP address 0.0.0.0/0).
 * Run `node server.js` for a dev server. Navigate to `http://localhost:4000/`.
 * The app will not automatically reload if you change any of the source files.
@@ -79,8 +78,8 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: connects to database but fails to complete Github Client authorization
-* To-Do: nothing
+* Status: connects to database but unable to complete registration - routes register function needs to be updated to new MongoDB config.
+* To-Do: update `Routes/app.route('/register')..`
 
 ## :clap: Inspiration
 
